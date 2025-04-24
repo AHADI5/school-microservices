@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="UserManagement" />
         <module name="BaseDomains" />
+        <module name="StudentManagement" />
         <module name="DiscoveryService" />
         <module name="ApiGateWay" />
       </profile>
@@ -19,6 +20,7 @@
       <module name="ApiGateWay" options="-parameters" />
       <module name="BaseDomains" options="-parameters" />
       <module name="DiscoveryService" options="-parameters" />
+      <module name="StudentManagement" options="-parameters" />
       <module name="UserManagement" options="-parameters" />
     </option>
   </component>

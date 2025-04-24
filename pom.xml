@@ -14,6 +14,7 @@
         <module>DiscoveryService</module>
         <module>ApiGateWay</module>
         <module>UserManagement</module>
+        <module>StudentManagement</module>
 
     </modules>
     <properties>

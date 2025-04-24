@@ -14,8 +14,8 @@ spring:
             allowedHeaders: "*"
             allowedMethods: "*"
       routes:
-        - id: user-management-service
-          uri: lb://USER-MANAGEMENT-SERVICE
+        - id: user-management
+          uri: lb://USER-MANAGEMENT
           predicates:
             - Path=/api/v1/auth/**
           filters:
