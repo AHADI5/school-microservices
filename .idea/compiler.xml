@@ -10,6 +10,7 @@
         <module name="UserManagement" />
         <module name="BaseDomains" />
         <module name="StudentManagement" />
+        <module name="DepartementManagement" />
         <module name="DiscoveryService" />
         <module name="ApiGateWay" />
       </profile>
@@ -19,6 +20,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ApiGateWay" options="-parameters" />
       <module name="BaseDomains" options="-parameters" />
+      <module name="DepartementManagement" options="-parameters" />
       <module name="DiscoveryService" options="-parameters" />
       <module name="StudentManagement" options="-parameters" />
       <module name="UserManagement" options="-parameters" />

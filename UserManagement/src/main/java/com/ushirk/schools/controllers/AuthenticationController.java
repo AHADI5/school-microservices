@@ -6,6 +6,7 @@ import com.ushirk.schools.dtoRequests.*;
 import com.ushirk.schools.model.Role;
 import com.ushirk.schools.service.AuthenticationService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.catalina.User;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -55,6 +56,10 @@ public record AuthenticationController(
         return  "the token " + token + "is valid" ;
     }
 
+    @PostMapping("/user")
+    public  void registerUser(@RequestBody RegisterRequest user) {
+        authenticationService.register(user , Role.ADMIN);
+    }
 
 
 }

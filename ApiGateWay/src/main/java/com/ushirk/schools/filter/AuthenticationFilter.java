@@ -50,7 +50,7 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
 
                     RestTemplate restTemplate = new RestTemplate();
                 // Define the base URL
-                String baseUrl = "http://localhost:8850/api/v1/auth/validate";
+                String baseUrl = "http://localhost:8085/api/v1/auth/validate";
 
                 // Create HttpHeaders and set any custom headers (if needed)
                 HttpHeaders headers = new HttpHeaders();

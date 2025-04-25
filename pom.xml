@@ -15,6 +15,7 @@
         <module>ApiGateWay</module>
         <module>UserManagement</module>
         <module>StudentManagement</module>
+        <module>DepartementManagement</module>
 
     </modules>
     <properties>

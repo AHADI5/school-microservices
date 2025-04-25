@@ -20,6 +20,18 @@ spring:
             - Path=/api/v1/auth/**
           filters:
             - AuthenticationFilter
+        - id: department-management
+          uri: lb://DEPARTMENT-MANAGEMENT
+          predicates:
+            - Path=/api/v1/department/**
+          filters:
+            - AuthenticationFilter
+        - id: student-management
+          uri: lb://STUDENT-MANAGEMENT
+          predicates:
+            - Path=/api/v1/student/**
+          filters:
+            - AuthenticationFilter
 eureka:
   client:
     service-url:

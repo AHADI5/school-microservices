@@ -14,10 +14,22 @@ spring:
             allowedHeaders: "*"
             allowedMethods: "*"
       routes:
-        - id: user-management-service
-          uri: lb://USER-MANAGEMENT-SERVICE
+        - id: user-management
+          uri: lb://USER-MANAGEMENT
           predicates:
             - Path=/api/v1/auth/**
+          filters:
+            - AuthenticationFilter
+        - id: department-management
+          uri: lb://DEPARTMENT-MANAGEMENT
+          predicates:
+            - Path=/api/v1/department/**
+          filters:
+            - AuthenticationFilter
+        - id: student-management
+          uri: lb://STUDENT-MANAGEMENT
+          predicates:
+            - Path=/api/v1/student/**
           filters:
             - AuthenticationFilter
 eureka:

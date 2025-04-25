@@ -15,7 +15,7 @@ public record StudentController(
         StudentService studentService
 ) {
 
-    @PostMapping("/")
+    @PostMapping("/student")
     public StudentResponse createStudent(@RequestBody StudentRequest student) {
         return StudentResponse.toStudentResponse(studentService.registerStudent(student)) ;
     }
